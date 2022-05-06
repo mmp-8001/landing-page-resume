@@ -1,6 +1,7 @@
 <template>
   <Ads/>
   <Navbar/>
+
 </template>
 
 <script setup lang="ts">

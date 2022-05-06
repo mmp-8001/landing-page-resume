@@ -18,13 +18,13 @@
   column-gap: 15px;
 
   .icon-search {
-    right: 3%;
+    right: 15px;
     font-size: 18px;
     position: absolute;
   }
 
   .search-bar {
-    padding: 8px 10%;
+    padding: 12px 45px 12px 10px;
     font-size: 15px;
     outline: none;
     font-family: Yekan, Tahoma, sans-serif;

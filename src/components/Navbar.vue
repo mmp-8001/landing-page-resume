@@ -1,7 +1,7 @@
 <template>
   <div class="navbar container">
     <div class="row flex-nowrap justify-content-center">
-      <div class="col-2 logo">BRAND LOGO</div>
+      <div class="col-2 logo"><span>BRAND LOGO</span></div>
       <div class="col-2 menu">
         <span class="icon-menu"></span>
         <span>دسته‌بندی</span>
@@ -29,10 +29,8 @@
           <span class="path4"></span>
         </span>
       </div>
-      <div class="col justify-content-end user-account">
-        <span class="icon-user"></span>
-        <span class="user_name">پژمان فرجی</span>
-        <span class="icon-arrow-down"></span>
+      <div class="col">
+        <UserAccount/>
       </div>
     </div>
   </div>
@@ -41,6 +39,7 @@
 <script setup>
 import {ref} from 'vue'
 import SearchBar from './SearchBar.vue'
+import UserAccount from './UserAccount.vue'
 </script>
 
 <style scoped lang="scss">
@@ -59,7 +58,9 @@ $text_main_color: #0D0D0D;
 
   .logo {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 25px;
+    margin-top: 8px;
+    white-space: nowrap;
     color: #707070;
   }
 
@@ -111,22 +112,6 @@ $text_main_color: #0D0D0D;
 
     .icon-menu {
       font-size: 23px;
-    }
-  }
-
-  .user-account {
-    column-gap: 15px;
-
-    .icon-user {
-      color: #0066FF;
-      padding: 16px;
-      font-size: 19px;
-      background-color: #E5EFFF;
-      border-radius: 50%;
-    }
-
-    .user_name {
-      white-space: nowrap;
     }
   }
 
