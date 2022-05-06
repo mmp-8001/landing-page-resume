@@ -24,9 +24,12 @@ const show = ref(true)
 </script>
 
 <style scoped lang="scss">
+
+$ads_height: 60px;
+
 div.ads {
   font-size: 18px;
-  height: 60px;
+  height: $ads_height;
   color: white;
   overflow: hidden;
   position: relative;
@@ -61,18 +64,20 @@ div.ads {
 
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
+  transform: translateY(-$ads_height/2);
 }
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+  $ads_height: 50px;
   div.ads {
-    height: 50px;
+    height: $ads_height;
     font-size: 14px;
 
     .img {

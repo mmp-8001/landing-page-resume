@@ -1,9 +1,11 @@
 <template>
   <Ads/>
+  <Navbar/>
 </template>
 
 <script setup lang="ts">
 import Ads from './components/Ads.vue'
+import Navbar from './components/Navbar.vue'
 
 </script>
 
@@ -23,7 +25,7 @@ body, html {
   font-weight: normal;
   margin: 0 !important;
   padding: 0 !important;
-  background-color: #f8f9fa;
+  background-color: #FFFFFF;
   scroll-behavior: smooth;
 }
 

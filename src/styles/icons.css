@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:  url('src/assets/fonts/icomoon.eot?2s5n7x');
-    src:  url('src/assets/fonts/icomoon.eot?2s5n7x#iefix') format('embedded-opentype'),
-    url('src/assets/fonts/icomoon.ttf?2s5n7x') format('truetype'),
-    url('src/assets/fonts/icomoon.woff?2s5n7x') format('woff'),
-    url('src/assets/fonts/icomoon.svg?2s5n7x#icomoon') format('svg');
+    src: url('src/assets/fonts/icomoon.eot?d1qvui');
+    src: url('src/assets/fonts/icomoon.eot?d1qvui#iefix') format('embedded-opentype'),
+    url('src/assets/fonts/icomoon.ttf?d1qvui') format('truetype'),
+    url('src/assets/fonts/icomoon.woff?d1qvui') format('woff'),
+    url('src/assets/fonts/icomoon.svg?d1qvui#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -25,6 +25,56 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-close:before {
+.icon-menu:before {
+    content: "\e908";
+}
+
+.icon-arrow-down:before {
     content: "\e900";
+}
+
+.icon-search:before {
+    content: "\e901";
+}
+
+.icon-shopping-cart .path1:before {
+    content: "\e902";
+    color: rgb(0, 102, 255);
+}
+
+.icon-shopping-cart .path2:before {
+    content: "\e903";
+    margin-left: -1em;
+    color: rgb(41, 45, 50);
+}
+
+.icon-shopping-cart .path3:before {
+    content: "\e904";
+    margin-left: -1em;
+    color: rgb(0, 102, 255);
+}
+
+.icon-shopping-cart .path4:before {
+    content: "\e905";
+    margin-left: -1em;
+    color: rgb(0, 102, 255);
+}
+
+.icon-Telephone .path1:before {
+    content: "\e906";
+    color: rgb(0, 102, 255);
+}
+
+.icon-Telephone .path2:before {
+    content: "\e907";
+    margin-left: -1em;
+    color: rgb(41, 45, 50);
+}
+
+.icon-user:before {
+    content: "\e909";
+}
+
+.icon-close:before {
+    content: "\e90a";
 }
