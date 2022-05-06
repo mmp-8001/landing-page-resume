@@ -1,0 +1,21 @@
+@mixin font-yekan {
+  @font-face {
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url('src/assets/fonts/yekan_bakh_fa_num_regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: Yekan;
+    font-style: normal;
+    font-weight: 500;
+    src: url('src/assets/fonts/yekan_bakh_fa_num_medium.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: Bold;
+    src: url('src/assets/fonts/yekan_bakh_fa_num_bold.ttf') format('truetype');
+  }
+}
