@@ -2,10 +2,8 @@
   <div class="navbar container">
     <div class="row flex-nowrap justify-content-center">
       <div class="col-2 logo"><span>BRAND LOGO</span></div>
-      <div class="col-2 menu">
-        <span class="icon-menu"></span>
-        <span>دسته‌بندی</span>
-        <span class="icon-arrow-down"></span>
+      <div class="col-2">
+        <Menu/>
       </div>
       <div class="col-4">
         <SearchBar/>
@@ -35,6 +33,7 @@ import {ref} from 'vue'
 import SearchBar from './SearchBar.vue'
 import UserAccount from './UserAccount.vue'
 import Cart from './Cart.vue'
+import Menu from './Menu.vue'
 </script>
 
 <style scoped lang="scss">
@@ -73,19 +72,6 @@ $text_main_color: #0D0D0D;
       color: #9B9B9B;
       margin: 0 4px;
     }
-  }
-
-  .menu {
-    column-gap: 10px;
-
-    .icon-menu {
-      font-size: 19px;
-    }
-  }
-
-  .icon-arrow-down {
-    font-size: 10px;
-    color: #9B9B9B;
   }
 }
 </style>
