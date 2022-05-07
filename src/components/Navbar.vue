@@ -44,12 +44,13 @@ import UserAccount from './UserAccount.vue'
 
 <style scoped lang="scss">
 
+// Colors
 $text_main_color: #0D0D0D;
 
 .navbar {
   color: $text_main_color;
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 15px;
 
   .row > div {
     display: flex;
@@ -73,19 +74,19 @@ $text_main_color: #0D0D0D;
       justify-content: center;
       align-items: center;
       position: absolute;
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 600;
       border-radius: 50%;
       background-color: #EF1E1E;
       color: white;
-      width: 32px;
-      height: 32px;
+      width: 29px;
+      height: 29px;
       top: 59%;
       left: 59%;
     }
 
     .icon-shopping-cart {
-      font-size: 27px;
+      font-size: 22px;
       padding: 10px;
       border: 2px solid #EBEBEB;
       border-radius: 10px;
@@ -95,10 +96,10 @@ $text_main_color: #0D0D0D;
   .phone {
     justify-content: end;
     column-gap: 10px;
-    font-weight: bold;
+    font-weight: 500;
 
     .icon-Telephone {
-      font-size: 23px;
+      font-size: 21px;
     }
 
     .phone-area-code {
@@ -111,12 +112,12 @@ $text_main_color: #0D0D0D;
     column-gap: 10px;
 
     .icon-menu {
-      font-size: 23px;
+      font-size: 19px;
     }
   }
 
   .icon-arrow-down {
-    font-size: 11px;
+    font-size: 10px;
     color: #9B9B9B;
   }
 }

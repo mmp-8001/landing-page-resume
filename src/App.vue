@@ -32,6 +32,7 @@ body, html {
 
 * {
   box-sizing: border-box;
+  white-space: nowrap;
 }
 
 a {

@@ -70,7 +70,7 @@ div.ads {
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
-  transform: translateY(-$ads_height/2);
+  transform: translateY(-20px);
 }
 
 // Medium devices (tablets, less than 992px)

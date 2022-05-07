@@ -1,11 +1,20 @@
 <template>
-  <div class="search d-flex flex-nowrap">
-    <span class="icon-search"></span>
-    <input id="search-bar" class="search-bar" type="text" placeholder="کالا یا کلمه مورد نظر  خود راتایپ کنید...">
-  </div>
+  <DropDown class="search d-flex flex-nowrap">
+    <template #dropdown>
+      <span class="icon-search"></span>
+      <input @focus.stop="" id="search-bar" class="search-bar" type="text"
+             placeholder="کالا یا کلمه مورد نظر  خود راتایپ کنید...">
+    </template>
+    <template #content>
+      <SearchResult class="result d-flex flex-column"/>
+    </template>
+  </DropDown>
 </template>
 
 <script setup>
+import DropDown from './DropDown.vue'
+import SearchResult from './SearchResult.vue'
+
 </script>
 
 <style scoped lang="scss">
@@ -19,13 +28,13 @@
 
   .icon-search {
     right: 15px;
-    font-size: 18px;
+    font-size: 20px;
     position: absolute;
   }
 
   .search-bar {
-    padding: 12px 45px 12px 10px;
-    font-size: 15px;
+    padding: 9px 45px 9px 10px;
+    font-size: 16px;
     outline: none;
     font-family: Yekan, Tahoma, sans-serif;
     width: 100%;

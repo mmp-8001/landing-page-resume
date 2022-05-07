@@ -1,24 +1,24 @@
 <template>
-  <div @click="show=!show" class="d-flex align-items-center justify-content-end user-account">
-    <span class="icon-user"></span>
-    <span class="user_name">پژمان فرجی</span>
-    <span class="icon-arrow-down" :class="{'angle-left':!show}"></span>
-    <Transition>
-      <Card v-if="show" class="prof-card d-flex flex-column">
+  <DropDown class="d-flex align-items-center justify-content-end user-account">
+    <template #dropdown>
+      <span class="icon-user"></span>
+      <span class="user_name">پژمان فرجی</span>
+      <span class="icon-arrow-down"></span>
+    </template>
+    <template #content>
+      <Card class="prof-card d-flex flex-column">
         <div class="prof-item"><span>پروفایل</span><span class="icon-arrow-down angle-left"></span></div>
         <div class="prof-item"><span>تاریخچه سفارشات</span><span class="icon-arrow-down angle-left"></span></div>
         <div class="prof-item danger"><span>خروج از حساب</span><span class="icon-arrow-down angle-left"></span></div>
       </Card>
-    </Transition>
-  </div>
+    </template>
+  </DropDown>
 </template>
 
 <script setup>
 import Card from './Card.vue'
-import {ref} from "vue";
+import DropDown from './DropDown.vue'
 
-// Toggle show
-const show = ref(false)
 </script>
 
 <style scoped lang="scss">
@@ -71,7 +71,7 @@ const show = ref(false)
 
   .icon-user {
     color: #0066FF;
-    padding: 16px;
+    padding: 14px;
     font-size: 19px;
     background-color: #E5EFFF;
     border-radius: 50%;
@@ -85,21 +85,12 @@ const show = ref(false)
     font-size: 11px;
     color: #9B9B9B;
     transition: transform 0.3s ease-in-out;
+  }
 
-    &.angle-left {
+  .show {
+    .icon-arrow-down {
       transform: rotate(90deg);
     }
   }
-}
-
-.v-enter-active,
-.v-leave-active {
-  transition: all 0.3s ease-in-out;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-  transform: translateY(-30px);
 }
 </style>
