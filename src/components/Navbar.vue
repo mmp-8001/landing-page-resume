@@ -20,14 +20,8 @@
           <span class="path2"></span>
         </span>
       </div>
-      <div class="col-1 shop">
-        <span class="shop-count">3</span>
-        <span class="icon-shopping-cart">
-          <span class="path1"></span>
-          <span class="path2"></span>
-          <span class="path3"></span>
-          <span class="path4"></span>
-        </span>
+      <div class="col-1 align-items-center justify-content-center">
+        <Cart/>
       </div>
       <div class="col">
         <UserAccount/>
@@ -40,6 +34,7 @@
 import {ref} from 'vue'
 import SearchBar from './SearchBar.vue'
 import UserAccount from './UserAccount.vue'
+import Cart from './Cart.vue'
 </script>
 
 <style scoped lang="scss">
@@ -63,34 +58,6 @@ $text_main_color: #0D0D0D;
     margin-top: 8px;
     white-space: nowrap;
     color: #707070;
-  }
-
-  .shop {
-    position: relative;
-    justify-content: center;
-
-    .shop-count {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      font-size: 15px;
-      font-weight: 600;
-      border-radius: 50%;
-      background-color: #EF1E1E;
-      color: white;
-      width: 29px;
-      height: 29px;
-      top: 59%;
-      left: 59%;
-    }
-
-    .icon-shopping-cart {
-      font-size: 22px;
-      padding: 10px;
-      border: 2px solid #EBEBEB;
-      border-radius: 10px;
-    }
   }
 
   .phone {

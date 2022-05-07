@@ -10,7 +10,6 @@
 
 <script>
 import vClickOutside from "click-outside-vue3"
-import {ref} from "vue";
 
 export default {
   data() {

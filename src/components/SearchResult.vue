@@ -177,23 +177,5 @@ $overlay-height: 25px;
     height: $overlay-height;
     margin-top: -$overlay-height;
   }
-
-  /* width */
-  ::-webkit-scrollbar {
-    direction: rtl;
-    width: 4px;
-    transition: all 250ms ease-in-out;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #9B9B9B;
-    border-radius: 10px;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #444444;
-  }
 }
 </style>
