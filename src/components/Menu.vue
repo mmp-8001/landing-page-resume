@@ -1,9 +1,9 @@
 <template>
-  <DropDown class="menu align-items-center d-flex flex-nowrap">
+  <DropDown class="menu align-items-center d-none d-lg-flex flex-nowrap">
     <template #dropdown>
       <span class="icon-menu"></span>
-      <span>دسته‌بندی</span>
-      <span class="icon-arrow-down"></span>
+      <span class="d-none d-lg-inline">دسته‌بندی</span>
+      <span class="icon-arrow-down d-none d-lg-inline"></span>
     </template>
     <template #content>
       <Card class="menu-content d-flex flex-row flex-nowrap">
@@ -82,11 +82,17 @@
       </Card>
     </template>
   </DropDown>
+  <MobileMenu>
+    <div class="menu align-items-center d-lg-none d-flex flex-nowrap">
+      <span class="icon-menu"></span>
+    </div>
+  </MobileMenu>
 </template>
 
 <script setup>
 import DropDown from './DropDown.vue'
 import Card from './Card.vue'
+import MobileMenu from './MobileMenu.vue'
 
 </script>
 
@@ -107,7 +113,7 @@ $border-space: 20px;
     position: absolute;
     width: auto;
     height: auto;
-    right: 0;
+    right: -185%;
     top: calc(100% + 20px);
 
     .menu-item {
@@ -165,12 +171,25 @@ $border-space: 20px;
   }
 
   .icon-menu {
-    font-size: 19px;
+    font-size: 30px;
   }
 
   .icon-arrow-down {
     font-size: 10px;
     color: $secondary-color;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .menu {
+    .icon-menu {
+      font-size: 19px;
+    }
+
+    .menu-content {
+      right: 0;
+    }
   }
 }
 </style>

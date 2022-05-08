@@ -1,14 +1,14 @@
 <template>
   <div class="navbar container">
-    <div class="row flex-nowrap justify-content-center">
-      <div class="col-2 logo"><span>BRAND LOGO</span></div>
-      <div class="col-2">
+    <div class="row flex-lg-nowrap flex-wrap justify-content-center">
+      <div class="col-lg-2 order-lg-0 order-1 col-6 justify-content-center logo"><span>LOGO</span></div>
+      <div class="col-lg-2 justify-content-start justify-content-lg-center justify-content-xl-start col-3">
         <Menu/>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 col-10 order-lg-3 order-4">
         <SearchBar/>
       </div>
-      <div class="col phone">
+      <div class="col phone order-lg-4 d-lg-flex d-none">
         <div>
           <span class="phone-area-code">041</span>
           <span class="phone-number">35564126</span>
@@ -18,10 +18,12 @@
           <span class="path2"></span>
         </span>
       </div>
-      <div class="col-1 align-items-center justify-content-center">
+      <div
+          class="col-lg-1 col-2 align-items-center justify-content-end order-last order-lg-5 justify-content-lg-center">
         <Cart/>
       </div>
-      <div class="col">
+      <div class="divider d-xl-none col align-items-stretch order-5 d-none d-lg-flex"><span>&nbsp;</span></div>
+      <div class="col-lg-auto justify-content-end order-lg-last order-3 col-3">
         <UserAccount/>
       </div>
     </div>
@@ -45,6 +47,14 @@ $text_main_color: #0D0D0D;
   color: $text_main_color;
   margin-top: 20px;
   font-size: 15px;
+
+  & > .row {
+    row-gap: 20px;
+  }
+
+  .divider span {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
 
   .row > div {
     display: flex;

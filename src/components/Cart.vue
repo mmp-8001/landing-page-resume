@@ -1,7 +1,7 @@
 <template>
   <DropDown class="shop d-flex align-items-center justify-content-center">
     <template #dropdown>
-      <span class="shop-count">3</span>
+      <span class="shop-count d-none d-lg-flex">3</span>
       <span class="icon-shopping-cart">
           <span class="path1"></span>
           <span class="path2"></span>
@@ -133,9 +133,9 @@ $corner-space: 18px;
   }
 
   .icon-shopping-cart {
-    font-size: 22px;
-    padding: 10px;
-    border: 2px solid #EBEBEB;
+    font-size: 30px;
+    padding: 0;
+    border: none;
     border-radius: 10px;
   }
 }
@@ -146,7 +146,7 @@ $corner-space: 18px;
   font-size: 13px;
   width: calc(100% + 175px);
   height: auto;
-  right: 0;
+  left: 0;
   padding: $corner-space;
   top: calc(100% + 20px);
 
@@ -257,6 +257,24 @@ $corner-space: 18px;
       background-color: #0066FF;
       border-color: #0066FF;
       color: white;
+    }
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cart {
+    right: 0;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .shop {
+    .icon-shopping-cart {
+      border: 2px solid #EBEBEB;
+      padding: 10px;
+      font-size: 22px;
     }
   }
 }

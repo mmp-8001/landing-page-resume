@@ -1,13 +1,11 @@
 <template>
-  <!--  <Ads/>-->
-  <!--  <Navbar/>-->
-  <MobileMenu/>
+  <Ads/>
+  <Navbar/>
 </template>
 
 <script setup lang="ts">
 import Ads from './components/Ads.vue'
 import Navbar from './components/Navbar.vue'
-import MobileMenu from './components/MobileMenu.vue'
 
 </script>
 

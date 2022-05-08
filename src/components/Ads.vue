@@ -47,7 +47,7 @@ div.ads {
 
     .close {
       cursor: pointer;
-      z-index: 20;
+      z-index: 15;
     }
 
     .text {

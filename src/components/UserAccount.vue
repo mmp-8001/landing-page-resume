@@ -2,8 +2,8 @@
   <DropDown class="d-flex align-items-center justify-content-end user-account">
     <template #dropdown>
       <span class="icon-user"></span>
-      <span class="user_name">پژمان فرجی</span>
-      <span class="icon-arrow-down"></span>
+      <span class="user_name d-none d-xl-block">پژمان فرجی</span>
+      <span class="icon-arrow-down d-none d-xl-block"></span>
     </template>
     <template #content>
       <Card class="prof-card d-flex flex-column">
@@ -22,6 +22,8 @@ import DropDown from './DropDown.vue'
 </script>
 
 <style scoped lang="scss">
+$primary-color: #0D0D0D;
+
 .user-account {
   column-gap: 15px;
   position: relative;
@@ -30,9 +32,9 @@ import DropDown from './DropDown.vue'
   .prof-card {
     row-gap: 10px;
     display: flex;
-    width: calc(100% + 20px);
+    width: calc(100% + 122px);
     height: auto;
-    right: 0;
+    left: 0;
     padding: 10px;
     position: absolute;
     top: calc(100% + 20px);
@@ -70,10 +72,10 @@ import DropDown from './DropDown.vue'
   }
 
   .icon-user {
-    color: #0066FF;
-    padding: 14px;
-    font-size: 19px;
-    background-color: #E5EFFF;
+    color: $primary-color;
+    padding: 0;
+    font-size: 28px;
+    background-color: white;
     border-radius: 50%;
   }
 
@@ -90,6 +92,24 @@ import DropDown from './DropDown.vue'
   .show {
     .icon-arrow-down {
       transform: rotate(90deg);
+    }
+  }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .user-account {
+    .prof-card {
+      width: calc(100% + 20px);
+      right: 0;
+    }
+
+    .icon-user {
+      color: #0066FF;
+      padding: 14px;
+      font-size: 19px;
+      background-color: #E5EFFF;
     }
   }
 }

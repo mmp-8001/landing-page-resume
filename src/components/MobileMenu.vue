@@ -1,7 +1,10 @@
 <template>
-  <div class="overlay" @click="show=false"></div>
+  <div @click="show=true">
+    <slot></slot>
+  </div>
+  <div v-show="show" class="overlay d-flex d-lg-none" @click="show=false"></div>
   <Transition>
-    <div v-if="show" id="mobile-menu">
+    <div v-show="show" class="d-block d-lg-none" id="mobile-menu">
       <div class="profile-view d-flex flex-row align-items-center">
         <div class="photo d-flex justify-content-center align-items-center"><span class="icon-user"></span></div>
         <div class="details d-flex flex-column">
@@ -59,9 +62,7 @@ import {ref} from 'vue'
 import Collapsible from './Collapsible.vue'
 
 const show = ref(true);
-
 </script>
-
 <style scoped lang="scss">
 $background-color: #1f2631;
 $primary-color: white;
@@ -154,6 +155,8 @@ $icon-spacing: 10px;
   background-color: rgba(13, 13, 13, 0.66);
   width: 100%;
   height: 100%;
+  top: 0;
+  right: 0;
   z-index: 10;
 }
 
