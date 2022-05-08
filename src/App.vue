@@ -1,12 +1,13 @@
 <template>
-  <Ads/>
-  <Navbar/>
-
+  <!--  <Ads/>-->
+  <!--  <Navbar/>-->
+  <MobileMenu/>
 </template>
 
 <script setup lang="ts">
 import Ads from './components/Ads.vue'
 import Navbar from './components/Navbar.vue'
+import MobileMenu from './components/MobileMenu.vue'
 
 </script>
 
@@ -38,6 +39,7 @@ body, html {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 /* width */
