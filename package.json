@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "click-outside-vue3": "^4.0.1",
+    "swiper": "^8.1.4",
     "vue": "^3.2.25"
   },
   "devDependencies": {

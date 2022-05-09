@@ -38,6 +38,8 @@ $primary-color: #0D0D0D;
     padding: 10px;
     position: absolute;
     top: calc(100% + 20px);
+    z-index: 30;
+    background-color: white;
 
     .prof-item {
       transition: all 0.3s ease-in-out;

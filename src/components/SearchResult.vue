@@ -78,6 +78,8 @@ $overlay-height: 25px;
   position: absolute;
   padding: $corner-space;
   top: calc(100% + 20px);
+  z-index: 30;
+  background-color: white;
 
   .recent-search {
     column-gap: 5px;

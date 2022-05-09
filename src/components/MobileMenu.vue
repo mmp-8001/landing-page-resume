@@ -2,9 +2,9 @@
   <div @click="show=true">
     <slot></slot>
   </div>
-  <div v-show="show" class="overlay d-flex d-lg-none" @click="show=false"></div>
+  <div v-if="show" class="overlay d-flex d-lg-none" @click="show=false"></div>
   <Transition>
-    <div v-show="show" class="d-block d-lg-none" id="mobile-menu">
+    <div v-if="show" class="d-block d-lg-none" id="mobile-menu">
       <div class="profile-view d-flex flex-row align-items-center">
         <div class="photo d-flex justify-content-center align-items-center"><span class="icon-user"></span></div>
         <div class="details d-flex flex-column">
@@ -61,7 +61,7 @@
 import {ref} from 'vue'
 import Collapsible from './Collapsible.vue'
 
-const show = ref(true);
+const show = ref(false);
 </script>
 <style scoped lang="scss">
 $background-color: #1f2631;

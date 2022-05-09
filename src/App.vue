@@ -1,11 +1,13 @@
 <template>
-  <Ads/>
-  <Navbar/>
+    <Ads/>
+    <Navbar/>
+  <Carousel></Carousel>
 </template>
 
 <script setup lang="ts">
 import Ads from './components/Ads.vue'
 import Navbar from './components/Navbar.vue'
+import Carousel from './components/Carousel.vue'
 
 </script>
 

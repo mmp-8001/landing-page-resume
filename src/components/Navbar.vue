@@ -1,7 +1,8 @@
 <template>
   <div class="navbar container">
     <div class="row flex-lg-nowrap flex-wrap justify-content-center">
-      <div class="col-lg-2 order-lg-0 order-1 col-6 justify-content-center logo"><span>LOGO</span></div>
+      <div class="col-lg-2 order-lg-0 order-1 col-6 justify-content-lg-start justify-content-center logo"><span>BRAND LOGO</span>
+      </div>
       <div class="col-lg-2 justify-content-start justify-content-lg-center justify-content-xl-start col-3">
         <Menu/>
       </div>
@@ -19,7 +20,7 @@
         </span>
       </div>
       <div
-          class="col-lg-1 col-2 align-items-center justify-content-end order-last order-lg-5 justify-content-lg-center">
+          class="col-xxl-1 col-lg-auto col-2 align-items-center justify-content-end order-last order-lg-5 justify-content-lg-center">
         <Cart/>
       </div>
       <div class="divider d-xl-none col align-items-stretch order-5 d-none d-lg-flex"><span>&nbsp;</span></div>

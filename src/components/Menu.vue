@@ -113,8 +113,10 @@ $border-space: 20px;
     position: absolute;
     width: auto;
     height: auto;
-    right: -185%;
+    right: -164%;
     top: calc(100% + 20px);
+    z-index: 30;
+    background-color: white;
 
     .menu-item {
       margin: $border-space;

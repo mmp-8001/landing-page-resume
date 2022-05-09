@@ -1,7 +1,7 @@
 <template>
   <DropDown class="shop d-flex align-items-center justify-content-center">
     <template #dropdown>
-      <span class="shop-count d-none d-lg-flex">3</span>
+      <span class="shop-count d-none d-lg-flex">{{ cart.length }}</span>
       <span class="icon-shopping-cart">
           <span class="path1"></span>
           <span class="path2"></span>
@@ -16,57 +16,15 @@
           <span class="count">2 مورد</span>
         </div>
         <div class="cart-content d-flex flex-column justify-content-start">
-          <div class="product d-flex flex-column">
+          <div v-for="product in cart" :key="product.id" class="product d-flex flex-column">
             <div class="title d-flex flex-nowrap">
-              باتری تقویت شده برای گوشی ساموسنگ Note4
+              {{ product.title }}
             </div>
             <div class="footer align-items-center d-flex flex-nowrap">
-              <span class="price flex-grow-1">320.000 تومان</span>
+              <span class="price flex-grow-1">{{ product.price }}</span>
               <div class="count align-items-center d-flex flex-nowrap">
                 <span class="plus">+</span>
-                <span class="num">2 عدد</span>
-                <span class="minus">-</span>
-              </div>
-              <span class="icon-trash d-flex justify-content-center align-items-center"></span>
-            </div>
-          </div>
-          <div class="product d-flex flex-column">
-            <div class="title d-flex flex-nowrap">
-              باتری تقویت شده برای گوشی ساموسنگ Note4
-            </div>
-            <div class="footer align-items-center d-flex flex-nowrap">
-              <span class="price flex-grow-1">320.000 تومان</span>
-              <div class="count align-items-center d-flex flex-nowrap">
-                <span class="plus">+</span>
-                <span class="num">2 عدد</span>
-                <span class="minus">-</span>
-              </div>
-              <span class="icon-trash d-flex justify-content-center align-items-center"></span>
-            </div>
-          </div>
-          <div class="product d-flex flex-column">
-            <div class="title d-flex flex-nowrap">
-              باتری تقویت شده برای گوشی ساموسنگ Note4
-            </div>
-            <div class="footer align-items-center d-flex flex-nowrap">
-              <span class="price flex-grow-1">320.000 تومان</span>
-              <div class="count align-items-center d-flex flex-nowrap">
-                <span class="plus">+</span>
-                <span class="num">2 عدد</span>
-                <span class="minus">-</span>
-              </div>
-              <span class="icon-trash d-flex justify-content-center align-items-center"></span>
-            </div>
-          </div>
-          <div class="product d-flex flex-column">
-            <div class="title d-flex flex-nowrap">
-              باتری تقویت شده برای گوشی ساموسنگ Note4
-            </div>
-            <div class="footer align-items-center d-flex flex-nowrap">
-              <span class="price flex-grow-1">320.000 تومان</span>
-              <div class="count align-items-center d-flex flex-nowrap">
-                <span class="plus">+</span>
-                <span class="num">2 عدد</span>
+                <span class="num">{{ product.count }} عدد</span>
                 <span class="minus">-</span>
               </div>
               <span class="icon-trash d-flex justify-content-center align-items-center"></span>
@@ -89,22 +47,22 @@ const cart = ref([{
   id: 1,
   title: '9 Xiaomi Redmi Note باتری شیائومی',
   price: '320.000 تومان',
-  count: '2 عدد'
+  count: 2
 }, {
   id: 2,
   title: '9 Xiaomi Redmi Note باتری شیائومی',
   price: '320.000 تومان',
-  count: '2 عدد'
+  count: 2
 }, {
   id: 3,
   title: '9 Xiaomi Redmi Note باتری شیائومی',
   price: '320.000 تومان',
-  count: '2 عدد'
+  count: 2
 }, {
   id: 4,
   title: '9 Xiaomi Redmi Note باتری شیائومی',
   price: '320.000 تومان',
-  count: '2 عدد'
+  count: 2
 },])
 </script>
 
@@ -149,6 +107,8 @@ $corner-space: 18px;
   left: 0;
   padding: $corner-space;
   top: calc(100% + 20px);
+  z-index: 30;
+  background-color: white;
 
   .cart-info {
     font-weight: 500;

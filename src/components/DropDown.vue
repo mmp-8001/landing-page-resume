@@ -2,7 +2,7 @@
   <div @click="show=true" :class="{'show':!show}" v-click-outside="onClickOutside">
     <slot name="dropdown"></slot>
     <Transition>
-      <slot v-if="show" name="content"></slot>
+      <slot v-if="show" class="drop-content" name="content"></slot>
     </Transition>
   </div>
 </template>
@@ -28,10 +28,6 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-.drop-content {
-  z-index: 30;
-}
-
 .v-enter-active,
 .v-leave-active {
   transition: all 0.3s ease-in-out;
