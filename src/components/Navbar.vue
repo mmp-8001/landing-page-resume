@@ -23,7 +23,7 @@
           class="col-xxl-1 col-lg-auto col-2 align-items-center justify-content-end order-last order-lg-5 justify-content-lg-center">
         <Cart/>
       </div>
-      <div class="divider d-xl-none col align-items-stretch order-5 d-none d-lg-flex"><span>&nbsp;</span></div>
+      <div class="divider justify-content-center d-xl-none col align-items-stretch order-5 d-none d-lg-flex"><span>&nbsp;</span></div>
       <div class="col-lg-auto justify-content-end order-lg-last order-3 col-3">
         <UserAccount/>
       </div>
