@@ -1,13 +1,15 @@
 <template>
-    <Ads/>
-    <Navbar/>
-  <Carousel></Carousel>
+  <Ads/>
+  <Navbar/>
+  <Carousel/>
+  <ProductsSlider/>
 </template>
 
 <script setup lang="ts">
 import Ads from './components/Ads.vue'
 import Navbar from './components/Navbar.vue'
 import Carousel from './components/Carousel.vue'
+import ProductsSlider from './components/ProductsSlider.vue'
 
 </script>
 
