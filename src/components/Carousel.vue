@@ -131,10 +131,11 @@ export default {
 };
 </script>
 <style lang="scss">
-$vertical-space: 20px;
+$vertical-space: 40px;
 
 .main-slider {
-  padding: $vertical-space 0;
+  padding-top: $vertical-space;
+  padding-bottom: $vertical-space;
 
   .swiper-slide {
     border-radius: 10px;
@@ -188,7 +189,8 @@ $vertical-space: 20px;
 }
 
 .side-button {
-  padding: $vertical-space 0;
+  padding-top: $vertical-space;
+  padding-bottom: $vertical-space;
 
   .thumb {
     column-gap: 20px;
@@ -253,6 +255,8 @@ $vertical-space: 20px;
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .main-slider {
+    padding-bottom: 0;
+
     .swiper-slide {
       padding-top: 50%;
     }
@@ -261,6 +265,9 @@ $vertical-space: 20px;
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .main-slider {
+    padding-bottom: $vertical-space;
+  }
   .side-button {
     .swiper-wrapper {
       flex-direction: column;

@@ -102,7 +102,7 @@ $corner-space: 18px;
   position: absolute;
   color: #9B9B9B;
   font-size: 13px;
-  width: calc(100% + 175px);
+  width: calc(100% + 200px);
   height: auto;
   left: 0;
   padding: $corner-space;
@@ -230,6 +230,9 @@ $corner-space: 18px;
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .cart {
+    width: calc(100% + 175px);
+  }
   .shop {
     .icon-shopping-cart {
       border: 2px solid #EBEBEB;

@@ -2,7 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="banner">
-        <div class="content d-flex justify-content-between" style="background-image: url('src/assets/img/banner.png')">
+        <div
+            class="content d-flex flex-md-row justify-content-md-between flex-column justify-content-center align-items-center"
+            style="background-image: url('src/assets/img/banner.png')">
           <div class="title"><span>جشنواره تابستانه استارموبو با جوایز و تخفیف ویژه</span></div>
           <div class="link d-flex align-items-center">
             <span>صفحه جشنواره</span>
@@ -19,14 +21,17 @@
 </script>
 
 <style scoped lang="scss">
+$vertical-space: 40px;
+
 .banner {
   font-weight: 500;
+  margin-bottom: $vertical-space;
 
   .content {
     cursor: pointer;
     color: white;
-    background-color: red;
     border-radius: 10px;
+    row-gap: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 65%;
@@ -34,10 +39,6 @@
 
     &:hover .link .icon-arrow-left {
       transform: translateX(-3px);
-    }
-
-    .title {
-
     }
 
     .link {

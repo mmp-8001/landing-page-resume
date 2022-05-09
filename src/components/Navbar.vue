@@ -40,13 +40,12 @@ import Menu from './Menu.vue'
 </script>
 
 <style scoped lang="scss">
-
-// Colors
 $text_main_color: #0D0D0D;
+$vertical-space: 40px;
 
 .navbar {
   color: $text_main_color;
-  margin-top: 20px;
+  margin-top: $vertical-space;
   font-size: 15px;
 
   & > .row {

@@ -32,7 +32,7 @@ $primary-color: #0D0D0D;
   .prof-card {
     row-gap: 10px;
     display: flex;
-    width: calc(100% + 122px);
+    width: calc(100% + 150px);
     height: auto;
     left: 0;
     padding: 10px;
