@@ -2,6 +2,7 @@
   <Ads/>
   <Navbar/>
   <Carousel/>
+  <Banner/>
   <ProductsSlider/>
 </template>
 
@@ -10,6 +11,7 @@ import Ads from './components/Ads.vue'
 import Navbar from './components/Navbar.vue'
 import Carousel from './components/Carousel.vue'
 import ProductsSlider from './components/ProductsSlider.vue'
+import Banner from './components/Banner.vue'
 
 </script>
 
