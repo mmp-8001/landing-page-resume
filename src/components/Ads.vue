@@ -1,7 +1,7 @@
 <template>
   <Transition>
     <div v-if="show" class="ads">
-      <img src="src/assets/img/ads.png" class="img" width="960" height="350" alt="">
+      <img src="../assets/img/ads.png" class="img" width="960" height="350" alt="">
       <div class="container content">
         <div class="content align-items-center d-flex">
           <div class="icon-close close" @click="show=!show"></div>

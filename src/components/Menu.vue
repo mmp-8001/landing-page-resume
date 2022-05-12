@@ -75,7 +75,7 @@
             <div class="header d-flex flex-nowrap align-items-center"><span>سایر باتری ها</span><span
                 class="icon-arrow-left"></span></div>
             <div class="content d-flex flex-column">
-              <img src="src/assets/img/battery.png" alt="">
+              <img src="../assets/img/battery.png" alt="">
             </div>
           </div>
         </div>

@@ -1,3 +1,50 @@
+<script>
+// Import Background Images
+import backgroundBattery from '../assets/img/battery.webp';
+import backgroundHeadphone from '../assets/img/headphone.jpeg';
+import backgroundPhone from '../assets/img/phone.png';
+
+// Import Swiper Vue.js components
+import {Swiper, SwiperSlide} from "swiper/vue";
+import Card from "./Card.vue";
+
+// Import Swiper styles
+import "swiper/css";
+
+import "swiper/css/free-mode"
+import "swiper/css/thumbs"
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
+
+// import required modules
+import {EffectFade, FreeMode, Thumbs} from "swiper";
+import {ref} from "vue";
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+    Card
+  },
+  setup() {
+    const thumbsSwiper = ref(null);
+
+    const setThumbsSwiper = (swiper) => {
+      thumbsSwiper.value = swiper;
+    }
+
+    return {
+      thumbsSwiper,
+      setThumbsSwiper,
+      backgroundPhone,
+      backgroundHeadphone,
+      backgroundBattery,
+      modules: [EffectFade, FreeMode, Thumbs],
+    };
+  },
+};
+</script>
+
 <template>
   <div class="container">
     <div class="row">
@@ -50,7 +97,7 @@
           class="main-slider col-12 col-xl-9 order-first order-xl-last"
       >
         <swiper-slide>
-          <div class="slider" style="background-image: url('src/assets/img/phone.png')">
+          <div class="slider" :style="{backgroundImage: `url(${backgroundBattery} )`}">
             <div class="content d-none d-lg-block">
               <div class="wrapper d-flex align-items-between flex-column">
                 <div class="title">بررسی انواع آیفون در گروه فنی استارموبو</div>
@@ -63,7 +110,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <div class="slider" style="background-image: url('src/assets/img/battery.webp')">
+          <div class="slider" :style="{backgroundImage: `url(${backgroundBattery} )`}">
             <div class="content d-none d-lg-block">
               <div class="wrapper d-flex align-items-between flex-column">
                 <div class="title">بررسی انواع آیفون در گروه فنی استارموبو</div>
@@ -76,7 +123,7 @@
           </div>
         </swiper-slide>
         <swiper-slide>
-          <div class="slider" style="background-image: url('src/assets/img/headphone.jpeg')">
+          <div class="slider" :style="{backgroundImage: `url(${backgroundBattery} )`}">
             <div class="content d-none d-lg-block">
               <div class="wrapper d-flex align-items-between flex-column">
                 <div class="title">بررسی انواع آیفون در گروه فنی استارموبو</div>
@@ -92,44 +139,6 @@
     </div>
   </div>
 </template>
-<script>
-// Import Swiper Vue.js components
-import {Swiper, SwiperSlide} from "swiper/vue";
-import Card from "./Card.vue";
-
-// Import Swiper styles
-import "swiper/css";
-
-import "swiper/css/free-mode"
-import "swiper/css/thumbs"
-import "swiper/css/effect-fade";
-import "swiper/css/pagination";
-
-// import required modules
-import {EffectFade, FreeMode, Thumbs} from "swiper";
-import {ref} from "vue";
-
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-    Card
-  },
-  setup() {
-    const thumbsSwiper = ref(null);
-
-    const setThumbsSwiper = (swiper) => {
-      thumbsSwiper.value = swiper;
-    }
-
-    return {
-      thumbsSwiper,
-      setThumbsSwiper,
-      modules: [EffectFade, FreeMode, Thumbs],
-    };
-  },
-};
-</script>
 <style lang="scss">
 $vertical-space: 40px;
 

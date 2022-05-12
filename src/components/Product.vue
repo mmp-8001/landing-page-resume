@@ -2,7 +2,7 @@
   <Card class="product">
     <div class="product-img">
       <div class="wrapper d-flex justify-content-center align-items-center">
-        <img src="src/assets/img/product-5.png" alt="product image">
+        <img src="../assets/img/product-5.png" alt="product image">
       </div>
     </div>
     <div class="product-title">
