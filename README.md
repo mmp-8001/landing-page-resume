@@ -10,5 +10,5 @@ I try to implement the design in (template-design) folder with Vue.js to show my
 
 3- run `npm run dev`
 
-# Production Release
-http://mmp8001.liveblog365.com/
+# Preview
+https://drive.google.com/file/d/14ZlNsR0h4nid_xM534DDucVnMUzJkC5i/view?usp=sharing

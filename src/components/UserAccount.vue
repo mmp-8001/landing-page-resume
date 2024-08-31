@@ -2,7 +2,7 @@
   <DropDown class="d-flex align-items-center justify-content-end user-account">
     <template #dropdown>
       <span class="icon-user"></span>
-      <span class="user_name d-none d-xl-block">پژمان فرجی</span>
+      <span class="user_name d-none d-xl-block">محمد متین پروین</span>
       <span class="icon-arrow-down d-none d-xl-block"></span>
     </template>
     <template #content>

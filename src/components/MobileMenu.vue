@@ -8,7 +8,7 @@
       <div class="profile-view d-flex flex-row align-items-center">
         <div class="photo d-flex justify-content-center align-items-center"><span class="icon-user"></span></div>
         <div class="details d-flex flex-column">
-          <span class="name">پژمان فرجی</span>
+          <span class="name">محمد متین پروین</span>
           <span class="last-seen">آخرین ورود: 2 آبان 1400</span>
         </div>
       </div>
